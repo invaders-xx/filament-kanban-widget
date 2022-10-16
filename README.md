@@ -1,4 +1,4 @@
-# Add kanbon widget to your pages
+# Add kanban widget to your pages
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/invaders-xx/filament-kanban-widget.svg?style=flat-square)](https://packagist.org/packages/invaders-xx/filament-kanban-widget)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/invaders-xx/filament-kanban-widget/run-tests?label=tests)](https://github.com/invaders-xx/filament-kanban-widget/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -46,8 +46,7 @@ return [
 ## Usage
 
 ```php
-$filament-kanban-widget = new InvadersXX\FilamentKanbanWidget();
-echo $filament-kanban-widget->echoPhrase('Hello, InvadersXX!');
+
 ```
 
 ## Testing
