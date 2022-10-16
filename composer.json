@@ -44,7 +44,7 @@
         "laravel": {
             "providers": [
                 "InvadersXX\\FilamentKanbanWidget\\FilamentKanbanWidgetServiceProvider"
-            ],
+            ]
         }
     },
     "minimum-stability": "dev",

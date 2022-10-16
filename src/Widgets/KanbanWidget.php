@@ -35,7 +35,7 @@ abstract class KanbanWidget extends Widget
 
     protected string|Closure|null $afterKanbanView = null;
 
-    public function boot()
+    public function mount()
     {
         $this->configure();
     }
