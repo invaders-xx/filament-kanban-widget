@@ -8,8 +8,8 @@ use Filament\Support\Actions\Action as BaseAction;
 use Filament\Support\Actions\Concerns;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use InvadersXX\FilamentKanbanWidget\Actions\Concerns\HasCallback;
 use InvadersXX\FilamentKanbanWidget\Actions\Concerns\BelongsToLivewire;
+use InvadersXX\FilamentKanbanWidget\Actions\Concerns\HasCallback;
 
 class Action extends BaseAction
 {
@@ -72,6 +72,6 @@ class Action extends BaseAction
 
     public function getMapActionId(): string
     {
-        return Str::afterLast($this->getLivewire()->getName(), '.') . '.' . $this->getName();
+        return Str::afterLast($this->getLivewire()->getName(), '.').'.'.$this->getName();
     }
 }

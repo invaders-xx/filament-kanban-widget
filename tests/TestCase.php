@@ -4,9 +4,9 @@ namespace InvadersXX\FilamentKanbanWidget\Tests;
 
 use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use InvadersXX\FilamentKanbanWidget\FilamentKanbanWidgetServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use InvadersXX\FilamentKanbanWidget\FilamentKanbanWidgetServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -15,7 +15,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'InvadersXX\\FilamentKanbanWidget\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'InvadersXX\\FilamentKanbanWidget\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

@@ -32,6 +32,7 @@ abstract class KanbanWidget extends Widget
     protected string|Closure $sortableView = 'filament-kanban-widget::sortable';
 
     protected string|Closure|null $beforeKanbanView = null;
+
     protected string|Closure|null $afterKanbanView = null;
 
     public function boot()
@@ -90,18 +91,21 @@ abstract class KanbanWidget extends Widget
     public function blocks(array|Closure $blocks = []): self
     {
         $this->blocks = $blocks;
+
         return $this;
     }
 
     public function getBlocks(): array
     {
         $return = $this->evaluate($this->blocks);
+
         return $return;
     }
 
     public function beforeKanbanView(string|Closure $view): self
     {
         $this->beforeKanbanView = $view;
+
         return $this;
     }
 
@@ -113,6 +117,7 @@ abstract class KanbanWidget extends Widget
     public function afterKanbanView(string|Closure $view): self
     {
         $this->afterKanbanView = $view;
+
         return $this;
     }
 
